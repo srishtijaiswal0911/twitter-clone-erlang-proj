@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>twitter</title>
+        <style>
+          h1 {
+             color: coral; 
+             text-align: center;
+          }
+          h2 {
+             color: coral; 
+             text-align: center;
+          }
+          img{
+                display:block;
+                margin-left: auto;
+                margin-right: auto;
+          }
+          column {
+            float: left;
+            width: 60px;
+            height: 45px;
+          }
+          .row::after {
+            content: "";
+            clear: both;
+            display: table;
+          }
+          #name {
+          border-radius: 10px;
+          background: #ffffff;
+          padding: 10px;
+          width: 100px;
+          height: 10px;
+          border-color: coral;
+          }
+          #subscribe {
+          border-radius: 10px;
+          background: #ffffff;
+          padding: 10px;
+          width: 100px;
+          height: 10px;
+          border-color: coral;
+          }
+          #mention {
+          border-radius: 10px;
+          background: #ffffff;
+          padding: 10px;
+          width: 100px;
+          height: 10px;
+          border-color: coral;
+          }
+          #hashtag {
+          border-radius: 10px;
+          background: #ffffff;
+          padding: 10px;
+          width: 100px;
+          height: 10px;
+          border-color: coral;
+          }
+          #tweet {
+          border-radius: 10px;
+          background: #ffffff;
+          padding: 10px;
+          width: 100px;
+          height: 10px;
+          border-color: coral;
+          }
+          #password {
+          border-radius: 10px;
+          background: #ffffff;
+          padding: 10px;         
+          width: 100px;
+          height: 10px;
+          border-color: #f1763d;
+          }
+          p.text1 {
+          float:none;
+          font-weight: bold;
+          color: rgb(228, 116, 72); 
+          text-align: center;
+          }
+          input[type=button], input[type=reset], input[type=submit] {
+          background-color: #f15b41;
+          border-radius: 10px;
+          border: none;
+          color: white;
+          font-weight: bold;
+          padding: 10px 50px;
+          text-decoration: none;
+          margin: 4px 900px;
+          cursor: pointer;
+          }
+          #footer{ 
+            font-weight: bold;
+            position:fixed;
+            padding: 10px 10px 0px 10px;
+            bottom:10%;
+            left: 42%;
+            height:40px;
+            color: coral; 
+          }
+    </style>   
+    </head>
+<body>
+  <div class="row">
+    <div class="column">
+        <img width="60" height="60" src="twitter_icon.png" alt="Twitter" />
+    </div>
+    <div class="column">
+        <h1>Twitter Clone</h1>
+    </div>
+</div>
+<h2>Available Features</h2>
+<form action="./tweet">
+  <p class = "text1">Tweet: <input type="text" id="tweet" name="tweet"></p>
+  <input type="submit" value="Tweet">
+</form> 
+<form action="./search/hashtag">
+  <p class = "text1">Hashtag: <input type="text" id="hashtag" name="hashtag"></p>
+    <input type="submit" value="Search">
+  </form> 
+  <form action="./search/mention">
+    <p class = "text1">Mention: <input type="text" id="mention" name="mention"></p>
+    <input type="submit" value="Search">
+  </form> 
+  <!-- <form action="./search/subscribe">
+    <p class = "text1">Subscribed Username: <input type="text" id="subscribe" name="subscribe"></p>
+    <input type="submit" value="Search">
+  </form>  -->
+  <form action="./subscribe">
+    <p class = "text1">Username: <input type="text" id="name" name="name"></p>
+    <input type="submit" value="Subscribe">
+  </form> 
+  <form action="./feed">
+    <input type="submit" value="My Feed">
+  </form> 
+  <br><br><br><br><br><br>
+  <div id="footer">
+    <p class = "text2">
+        COP-5615 DOSP Project 4 part II <br>
+        
+        Srishti Jaiswal (UFID-80385159)
+    </p>
+</div>
+</body>
+</html>

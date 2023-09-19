@@ -1,0 +1,4 @@
+"test":SEARCHED HASTAGS "#123" Results : ["test #123"] 
+"test":SEARCHED MENTIONS "@test" Results : ["test @test"] 
+"srish":SEARCHED HASTAGS "#123" Results : ["whatsup #123"] 
+"bot":SEARCHED MENTIONS "@srish" Results : ["whatsup @srish"] 
